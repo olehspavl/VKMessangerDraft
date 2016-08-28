@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/detailsItemIcon"
+        android:scaleType="fitCenter"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailsItemProgressBar" />
+
+    <TextView
+        android:id="@+id/detailsItemNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/detailsItemIcon"
+        android:layout_toEndOf="@+id/detailsItemIcon"
+        android:lines="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toLeftOf="@+id/detailsItemDateTV"
+        android:layout_toStartOf="@+id/detailsItemDateTV" />
+
+    <TextView
+        android:id="@+id/detailsItemMessageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detailsItemNameTV"
+        android:layout_alignLeft="@+id/detailsItemNameTV"
+        android:layout_alignStart="@+id/detailsItemNameTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailsItemDateTV"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

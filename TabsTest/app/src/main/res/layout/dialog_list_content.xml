@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/selected_item_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dialogListIcon"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/dialogListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dialogListIcon"
+        android:layout_toEndOf="@+id/dialogListIcon"
+        android:lines="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toLeftOf="@+id/dialogsListMessageDate"
+        android:layout_toStartOf="@+id/dialogsListMessageDate" />
+
+    <TextView
+        android:id="@+id/dialogListLastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_below="@+id/dialogListName"
+        android:layout_alignLeft="@+id/dialogListName"
+        android:layout_alignStart="@+id/dialogListName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogsListMessageDate"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogsListProgressBar"
+        android:layout_alignLeft="@+id/dialogListIcon"
+        android:layout_alignStart="@+id/dialogListIcon"
+        android:layout_alignRight="@+id/dialogListIcon"
+        android:layout_alignEnd="@+id/dialogListIcon" />
+
+</RelativeLayout>
